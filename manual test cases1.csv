@@ -1,0 +1,76 @@
+ID,Title,Preconditions,Steps,Test Data,Expected result
+,1. Add product to cart with a logged out user,"1. User is logged out
+2. Product is in stock
+3. User is on view product details screen",1. Add a single product to cart from product details screen,,"1. Product would be added to the cart successfully 
+2. A confirmation message would be displayed with:
+""Product have been added to the cart"""
+,2. Add product to cart with a logged in user,"1. User is logged in
+2. Product is in stock",1. Add 30 different product to cart from the search results list,,"1. Product would be added to the cart successfully 
+2. A confirmation message would be displayed with:
+""Product have been added to the cart"""
+,3. Login after adding products to cart while the user was logged out,"1. User is logged out
+2. Product is in stock","1. Add a product to cart from category list
+2. Login from the same browser",,1. The products that was added to the car before login would still exist in the car after login
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,1
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+4. User can't Add more than 10 items from the same product to cart,,,,,
+a. add 10 items exactly,,,,,
+b.add less than 10 items,,,,,
+c. add more than 10 items (invalid),,,,,
+d. add 0 or -1 (invalid),,,,,
+,,,,,
+,,,,,
+5. Adding the same product multiple times should increase the quantity of the same product,,,,,
+a.add the same product multiple times,,,,,
+b. add the same product from different vendors,,,,,
+,,,,,
+,,,,,
+6. Products must be in-stock to be added to the cart,,,,,
+a.add a product with stock,,,,,
+b.add a product without stock,,,,,
+c.add more amount than available in stock,,,,,
+d. two users add the last piece in stock at the same time,,,,,
